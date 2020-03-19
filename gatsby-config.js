@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Pandas Eating Lots`,
-    description: `A simple description about pandas eating lots...`,
+    title: `points points points`,
+    description: `this is points points points, a blog about becoming agile (and maybe a few other things)`,
     author: `Greg Rancourt`,
   },
   plugins: [
