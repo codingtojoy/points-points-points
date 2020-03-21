@@ -1,10 +1,5 @@
 /* src/components/Button.module.css */
 
-@font-face {
-  font-family: "Kollektif";
-  src: url(../assets/fonts/Kollektif.ttf) format("truetype");
-}
-
 .button {
   display: inline-flex;
   flex-wrap: nowrap;

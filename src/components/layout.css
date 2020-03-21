@@ -627,11 +627,29 @@ pre tt:after {
 
 /* Set site-wide styles */
 
+@font-face {
+  font-family: "Kollektif";
+  src: url(../assets/fonts/Kollektif.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Kollektif Bold";
+  src: url(../assets/fonts/KollektifBold.ttf) format("truetype");
+}
+
+/* Import Adobe fonts */
+@import url("https://use.typekit.net/fqc4ctg.css");
+
 body {
   background-color: #383838;
   padding: 1em;
 }
 
 p {
+  font-family: dinosaur, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  color: #FFFFFF;
   margin-bottom: 1rem;
 }

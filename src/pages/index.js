@@ -6,7 +6,6 @@ import { graphql, Link } from "gatsby"
 import Button from "../components/Button"
 import DotGrid from "../components/DotGrid"
 import Footer from "../components/Footer"
-import GradientWrapper from "../components/GradientWrapper"
 import SEO from "../components/seo"
 
 import styles from "./index.module.css"
@@ -15,23 +14,22 @@ export default ({ data }) => {
   return (
     <>
       <SEO title="home" />
-      <GradientWrapper>
-        <DotGrid />
-        <h1 className={styles["home__title"]}>points points points</h1>
-        <p className={styles["home__aside"]}>(a blog about becoming agile)</p>
-      </GradientWrapper>
+      <DotGrid numRows={9} />
+      <h1 className={styles["home__title"]}>points points points</h1>
+      <p className={styles["home__aside"]}>(a blog about becoming agile)</p>
+      <DotGrid numRows={9} />
       <h2 className={styles["home__section_heading"]}>a little about me</h2>
-      <p className={styles["home__paragraph"]}>
+      <p>
         Howdy, folks! I’ve been an engineer since 2008, working on a variety of
         aerospace and defense programs in technical and leadership roles on
         agile teams. I’m currently working as an agile coach and change
         management expert.
       </p>
-      <p className={styles["home__paragraph"]}>
+      <p>
         I am always learning, usually through some sort of creative pursuit. Web
         development is currently filling my nights and weekends.
       </p>
-      <p className={styles["home__paragraph"]}>
+      <p>
         I created this blog to share some of what I’ve learned over the years in
         the hope that it helps people improve their lives at work.
       </p>
@@ -40,7 +38,9 @@ export default ({ data }) => {
       {data.allMarkdownRemark.edges.map(({ node }) => (
         <div key={node.id}>
           <Link className={styles["home__post_link"]} to={node.fields.slug}>
-            <h3 className={styles["home__post_title"]}>{node.frontmatter.title}</h3>
+            <h3 className={styles["home__post_title"]}>
+              {node.frontmatter.title}
+            </h3>
             <span className={styles["home__post_date"]}>
               {node.frontmatter.date} - {node.timeToRead} min read
             </span>
@@ -51,14 +51,27 @@ export default ({ data }) => {
       <Button to="/all-posts" text="show more" />
       <p className={styles["home__post_prompt"]}>
         Want me to write about a specific topic? Tweet me{" "}
-        <a className={styles["home__link"]} href="https://twitter.com/codingtojoy">@codingtojoy</a>
+        <a
+          className={styles["home__link"]}
+          href="https://twitter.com/codingtojoy"
+        >
+          @codingtojoy
+        </a>
       </p>
 
       <h2 className={styles["home__section_heading"]}>spread the wealth</h2>
-      <p className={styles["home__paragraph"]}>
+      <p>
         The spirit of this blog is to share knowledge for someone else’s
         benefit. If you’re an expert on a topic, consider sharing what you’ve
-        learned with others. You can even use this blog as a starting point by cloning it from <a className={styles["home__link"]} href="https://github.com/codingtojoy/points-points-points">GitHub</a>.
+        learned with others. You can even use this blog as a starting point by
+        cloning it from{" "}
+        <a
+          className={styles["home__link"]}
+          href="https://github.com/codingtojoy/points-points-points"
+        >
+          GitHub
+        </a>
+        .
       </p>
 
       <Footer />

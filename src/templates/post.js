@@ -4,29 +4,38 @@ import React from "react"
 import { graphql } from "gatsby"
 
 import Footer from "../components/Footer"
-import GradientWrapper from "../components/GradientWrapper"
 import SEO from "../components/seo"
+
+import styles from "./post.module.css"
+import DotGrid from "../components/DotGrid"
 
 export default ({ data }) => {
   const post = data.markdownRemark
 
   return (
     <>
-      <SEO title={post.frontmatter.title} description={post.excerpt} />
-      <nav>
-        <a href="/">points points points</a>
-        <a href="/">more posts</a>
+      <SEO
+        title={post.frontmatter.title.toLowerCase()}
+        description={post.excerpt}
+      />
+      <nav className={styles["post__nav"]}>
+        <a className={styles["nav__title"]} href="/">
+          points points points
+        </a>
+        <a className={styles["nav__more_articles"]} href="/">
+          more articles
+        </a>
       </nav>
 
-      <GradientWrapper>
-        <h1>{post.frontmatter.title}</h1>
-        <span>
-          {post.frontmatter.date} - {post.timeToRead} min read
-        </span>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
-      </GradientWrapper>
+      <DotGrid numRows={9} scheme="aqua" />
+      <h1 className={styles["post__title"]}>{post.frontmatter.title}</h1>
+      <span className={styles["post__date"]}>
+        {post.frontmatter.date} - {post.timeToRead} min read
+      </span>
+      <div dangerouslySetInnerHTML={{ __html: post.html }} />
+      <DotGrid numRows={5} scheme="aqua" />
 
-      <h2>fancy a share?</h2>
+      <h2 className={styles["post__title"]}>fancy a share?</h2>
       <p>Spread the knowledge if you found it useful.</p>
 
       <Footer />

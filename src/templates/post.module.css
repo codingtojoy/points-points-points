@@ -1,0 +1,41 @@
+/* src/templates/post.module.css */
+
+.post__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__title {
+  font-family: "Kollektif Bold", sans-serif;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.nav__more_articles {
+  font-family: "Kollektif", sans-serif;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 0.875rem;
+}
+
+.post__title {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-family: "Kollektif Bold", sans-serif;
+  font-size: 1.75rem;
+  color: #FFFFFF;
+  text-transform: lowercase;
+  text-decoration: none;
+}
+
+.post__date {
+  display: block;
+  margin: 0.5rem 0;
+  font-family: dinosaur, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 0.75rem;
+  color: #A0A0A0;
+  text-transform: uppercase;
+}
