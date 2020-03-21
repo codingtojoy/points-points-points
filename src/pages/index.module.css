@@ -1,5 +1,83 @@
 /* src/pages/index.module.css */
 
+@font-face {
+  font-family: "Kollektif Bold";
+  src: url(../assets/fonts/KollektifBold.ttf) format("truetype");
+}
+
+/* Import Adobe fonts */
+@import url("https://use.typekit.net/fqc4ctg.css");
+
+.home__title {
+  font-family: "Kollektif Bold", sans-serif;
+  font-size: 2rem;
+  color: #FFFFFF;
+}
+
 .home__aside {
+  font-family: dinosaur, sans-serif;
+  font-weight: 400;
+  font-style: normal;
   font-size: 0.875rem;
+  color: #FFFFFF;
+}
+
+.home__section_heading {
+  margin-top: 4rem;
+  margin-bottom: 1.25rem;
+  font-family: "Kollektif Bold", sans-serif;
+  font-size: 1.75rem;
+  color: #F9586C;
+}
+
+.home__paragraph {
+  font-family: dinosaur, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  color: #FFFFFF;
+}
+
+.home__post_link {
+  text-decoration: none;
+}
+
+.home__post_title {
+  margin-top: 2rem;
+  margin-bottom: 0.35rem;
+  font-family: "Kollektif Bold", sans-serif;
+  font-size: 1.375rem;
+  color: #FFFFFF;
+  text-transform: lowercase;
+  text-decoration: none;
+}
+
+.home__post_date {
+  display: block;
+  margin: 0.5rem 0;
+  font-family: dinosaur, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 0.75rem;
+  color: #A0A0A0;
+  text-transform: uppercase;
+}
+
+.home__post_excerpt {
+  font-family: dinosaur, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #FFFFFF;
+
+}
+
+.home__post_prompt {
+  font-family: dinosaur, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #FFFFFF;
+}
+
+.home__link {
+  color: #F9586C;
 }

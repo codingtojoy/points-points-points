@@ -3,8 +3,10 @@
 import React from "react"
 import PropTypes from "prop-types"
 
+import styles from "./Button.module.css"
+
 const Button = ({ to, text }) => {
-  return <a href={to}>{text}</a>
+  return <a className={styles["button"]} href={to}>{text}</a>
 }
 
 export default Button

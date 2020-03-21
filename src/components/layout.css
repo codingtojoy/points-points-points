@@ -1,3 +1,7 @@
+/* src/components/layout.css */
+
+/* Reset browser styles */
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -619,4 +623,15 @@ pre tt:after {
   html {
     font-size: 100%;
   }
+}
+
+/* Set site-wide styles */
+
+body {
+  background-color: #383838;
+  padding: 1em;
+}
+
+p {
+  margin-bottom: 1rem;
 }
