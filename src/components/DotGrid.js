@@ -5,7 +5,7 @@ import PropTypes from "prop-types"
 
 import styles from "./DotGrid.module.css"
 
-const DotGrid = ({ numRows, scheme }) => {
+const DotGrid = ({ numRows, numColumns, scheme }) => {
   // Set style
   let dotClass = styles["dots__dot_sunset"]
   switch (scheme) {
@@ -18,10 +18,7 @@ const DotGrid = ({ numRows, scheme }) => {
     default:
       dotClass = styles["dots__dot_sunset"]
       break
-    }
-
-  // Get number of grid columns
-  const numColumns = Math.floor((window.innerWidth - 24) / 16)
+  }
 
   // Create dots
   let dots = []
@@ -29,8 +26,8 @@ const DotGrid = ({ numRows, scheme }) => {
     dots.push(<span key={i} className={dotClass}></span>)
   }
 
-  // Set width of grid
-  const gridWidth = 16 * (numColumns - 1) + 8
+  // Set grid width
+  let gridWidth = 16 * (numColumns - 1) + 8
 
   return (
     <div className={styles["dots__wrapper"]}>
@@ -45,4 +42,5 @@ export default DotGrid
 
 DotGrid.propTypes = {
   numRows: PropTypes.number.isRequired,
+  numColumns: PropTypes.number.isRequired,
 }
