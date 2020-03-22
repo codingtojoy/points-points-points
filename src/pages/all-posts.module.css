@@ -1,40 +1,34 @@
-/* src/pages/index.module.css */
+/* src/pages/all-posts.module.css */
 
-.home__title {
-  margin: 1.5rem 0 0.5rem 0;
+.all_posts__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__title {
   font-family: "Kollektif Bold", sans-serif;
-  font-size: 2rem;
   color: #FFFFFF;
-  text-align: center;
-}
-
-.home__aside {
-  margin-bottom: 1.5rem;
-  font-family: dinosaur, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 0.875rem;
-  color: #FFFFFF;
-  text-align: center;
-}
-
-.home__section_heading {
-  margin-top: 4rem;
-  margin-bottom: 1.25rem;
-  font-family: "Kollektif Bold", sans-serif;
-  font-size: 1.75rem;
-  color: #F9586C;
-}
-
-.home__post_container {
-  margin: 2rem 0;
-}
-
-.home__post_link {
   text-decoration: none;
 }
 
-.home__post_title {
+.all_posts__section_heading {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-family: "Kollektif Bold", sans-serif;
+  font-size: 1.75rem;
+  color: #FFFFFF;
+}
+
+.all_posts__post_container {
+  margin: 2rem 0;
+}
+
+.all_posts__post_link {
+  text-decoration: none;
+}
+
+.all_posts__post_title {
   margin-top: 2rem;
   margin-bottom: 0.35rem;
   font-family: "Kollektif Bold", sans-serif;
@@ -44,7 +38,7 @@
   text-decoration: none;
 }
 
-.home__post_date {
+.all_posts__post_date {
   display: block;
   margin: 0.5rem 0;
   font-family: dinosaur, sans-serif;
@@ -55,14 +49,14 @@
   text-transform: uppercase;
 }
 
-.home__post_excerpt {
+.all_posts__post_excerpt {
   font-family: dinosaur, sans-serif;
   font-weight: 400;
   font-style: normal;
   color: #FFFFFF;
 }
 
-.home__link {
-  color: #F9586C;
+.all_posts__link {
+  color: #009EFD;
   text-decoration: none;
 }

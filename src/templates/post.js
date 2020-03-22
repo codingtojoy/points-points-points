@@ -41,7 +41,7 @@ export default ({ data }) => {
         <a className={styles["nav__title"]} href="/">
           points points points
         </a>
-        <a className={styles["nav__more_articles"]} href="/">
+        <a className={styles["nav__more_articles"]} href="/all-posts">
           more articles
         </a>
       </nav>

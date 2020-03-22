@@ -55,7 +55,7 @@ export default ({ data }) => {
 
       <h2 className={styles["home__section_heading"]}>here's the latest</h2>
       {data.allMarkdownRemark.edges.map(({ node }) => (
-        <div key={node.id}>
+        <div key={node.id} className={styles["home__post_container"]}>
           <Link className={styles["home__post_link"]} to={node.fields.slug}>
             <h3 className={styles["home__post_title"]}>
               {node.frontmatter.title}
@@ -68,7 +68,7 @@ export default ({ data }) => {
         </div>
       ))}
       <Button to="/all-posts" text="show more" />
-      <p className={styles["home__post_prompt"]}>
+      <p>
         Want me to write about a specific topic? Tweet me{" "}
         <a
           className={styles["home__link"]}
@@ -100,7 +100,10 @@ export default ({ data }) => {
 
 export const query = graphql`
   query {
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      limit: 5
+    ) {
       totalCount
       edges {
         node {
