@@ -7,16 +7,19 @@ import styles from "./DotGrid.module.css"
 
 const DotGrid = ({ numRows, numColumns, scheme }) => {
   // Set style
-  let dotClass = styles["dots__dot_sunset"]
+  let dotClass = styles["dots__dot_grass"]
   switch (scheme) {
-    case "sunset":
-      dotClass = styles["dots__dot_sunset"]
+    case "grass":
+      dotClass = styles["dots__dot_grass"]
       break
     case "aqua":
       dotClass = styles["dots__dot_aqua"]
       break
+    case "summer":
+      dotClass = styles["dots__dot_summer"]
+      break
     default:
-      dotClass = styles["dots__dot_sunset"]
+      dotClass = styles["dots__dot_grass"]
       break
   }
 

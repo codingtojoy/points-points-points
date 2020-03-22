@@ -23,7 +23,7 @@
   margin-bottom: 1.25rem;
   font-family: "Kollektif Bold", sans-serif;
   font-size: 1.75rem;
-  color: #F9586C;
+  color: #3DC53F;
 }
 
 .home__post_container {
@@ -39,7 +39,7 @@
   margin-bottom: 0.35rem;
   font-family: "Kollektif Bold", sans-serif;
   font-size: 1.375rem;
-  color: #FFFFFF;
+  color: #8FFA15;
   text-transform: lowercase;
   text-decoration: none;
 }
@@ -63,6 +63,6 @@
 }
 
 .home__link {
-  color: #F9586C;
+  color: #8FFA15;
   text-decoration: none;
 }

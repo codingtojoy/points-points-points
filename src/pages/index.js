@@ -33,10 +33,10 @@ export default ({ data }) => {
   return (
     <>
       <SEO title="home" />
-      <DotGrid numRows={4} numColumns={numColumns} scheme="sunset" />
+      <DotGrid numRows={4} numColumns={numColumns} scheme="grass" />
       <h1 className={styles["home__title"]}>points points points</h1>
       <p className={styles["home__aside"]}>(a blog about becoming agile)</p>
-      <DotGrid numRows={4} numColumns={numColumns} scheme="sunset" />
+      <DotGrid numRows={4} numColumns={numColumns} scheme="grass" />
       <h2 className={styles["home__section_heading"]}>a little about me</h2>
       <p>
         Howdy, folks! I’ve been an engineer since 2008, working on a variety of

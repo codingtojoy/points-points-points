@@ -38,7 +38,7 @@ export default ({ data }) => {
         </a>
       </nav>
 
-      <DotGrid numRows={9} numColumns={numColumns} scheme="aqua" />
+      <DotGrid numRows={7} numColumns={numColumns} scheme="summer" />
       <h2 className={styles["all_posts__section_heading"]}>every post ever</h2>
       {data.allMarkdownRemark.edges.map(({ node }) => (
         <div key={node.id} className={styles["all_posts__post_container"]}>
@@ -57,7 +57,7 @@ export default ({ data }) => {
         </div>
       ))}
 
-      <DotGrid numRows={4} numColumns={numColumns} scheme="aqua" />
+      <DotGrid numRows={4} numColumns={numColumns} scheme="summer" />
       <h2 className={styles["all_posts__section_heading"]}>want even more?</h2>
       <p>
         Tweet me{" "}
