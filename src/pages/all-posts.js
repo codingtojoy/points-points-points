@@ -63,7 +63,7 @@ export default ({ data }) => {
         Tweet me{" "}
         <a
           className={styles["all_posts__link"]}
-          href="https://twitter.com/codingtojoy"
+          href="https://twitter.com/intent/tweet?screen_name=codingtojoy"
         >
           @codingtojoy
         </a>{" "}
