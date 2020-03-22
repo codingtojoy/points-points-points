@@ -12,10 +12,11 @@ import DotGrid from "../components/DotGrid"
 export default ({ data }) => {
   const post = data.markdownRemark
 
-  const [numColumns, setNumColumns] = useState(18)
+  const [numColumns, setNumColumns] = useState(0)
 
   const handleNumColumns = () => {
-    setNumColumns(Math.floor((window.innerWidth - 24) / 16))
+    // 1024 limit based on media query in src/components/layout.css
+    setNumColumns(Math.floor((Math.min(window.innerWidth, 1024) - 24) / 16))
   }
 
   useEffect(() => {
@@ -45,13 +46,13 @@ export default ({ data }) => {
         </a>
       </nav>
 
-      <DotGrid numRows={9} numColumns={numColumns} scheme="aqua" />
+      <DotGrid numRows={7} numColumns={numColumns} scheme="aqua" />
       <h1 className={styles["post__title"]}>{post.frontmatter.title}</h1>
       <span className={styles["post__date"]}>
         {post.frontmatter.date} - {post.timeToRead} min read
       </span>
       <div dangerouslySetInnerHTML={{ __html: post.html }} />
-      <DotGrid numRows={5} numColumns={numColumns} scheme="aqua" />
+      <DotGrid numRows={4} numColumns={numColumns} scheme="aqua" />
 
       <h2 className={styles["post__title"]}>fancy a share?</h2>
       <p>Spread the knowledge if you found it useful.</p>

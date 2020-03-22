@@ -640,9 +640,25 @@ pre tt:after {
 /* Import Adobe fonts */
 @import url("https://use.typekit.net/fqc4ctg.css");
 
+html {
+  font: unset;
+}
+
 body {
   background-color: #383838;
-  padding: 1em;
+  padding: 1rem;
+}
+
+@media only screen and (min-width: 1024px) {
+  html {
+    background-color: #242424;
+    background-image: linear-gradient(90deg, #242424 0%, #383838 50%, #242424 100%);
+  }
+
+  body {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
 }
 
 p {
