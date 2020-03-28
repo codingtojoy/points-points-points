@@ -1,4 +1,4 @@
-# points points points
+# Becoming Agile
 
 This is a blog about becoming agile, written by Greg Rancourt ([@codingtojoy](https://twitter.com/codingtojoy)) and built with Gatsby.
 
@@ -9,7 +9,7 @@ So you'd like to share your expertise on a topic of your choosing? Great! Feel f
 1.  **Clone this repository**
 
     ```shell
-    git clone https://github.com/codingtojoy/points-points-points.git
+    git clone https://github.com/codingtojoy/becoming-agile.git
     ```
 
 1.  **Install dependencies**
@@ -17,7 +17,7 @@ So you'd like to share your expertise on a topic of your choosing? Great! Feel f
     Navigate into the newly-cloned repository and install dependencies.
 
     ```shell
-    cd points-points-points
+    cd becoming-agile
     npm i
     ```
 

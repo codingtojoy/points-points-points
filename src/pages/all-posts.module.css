@@ -1,23 +1,37 @@
 /* src/pages/all-posts.module.css */
 
 .all_posts__nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  margin: 0 -1rem;
+  padding: 1rem 1rem 0 1rem;
+  background-color: var(--secondary-background-color);
 }
 
 .nav__title {
-  font-family: "Kollektif Bold", sans-serif;
-  color: #FFFFFF;
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 0.75rem;
+  line-height: 18px;
+  color: var(--secondary-heading-color);
+  text-transform: uppercase;
   text-decoration: none;
+  letter-spacing: 0.05rem;
 }
 
-.all_posts__section_heading {
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-  font-family: "Kollektif Bold", sans-serif;
-  font-size: 1.75rem;
-  color: #62A6FF;
+.all_posts__banner {
+  margin: 0 -1rem;
+  padding: 1rem;
+  background-color: var(--secondary-background-color);
+}
+
+.banner__heading {
+  margin: 8rem 0;
+  color: var(--secondary-heading-color);
+  text-align: center;
+}
+
+.all_posts__listing {
+  margin: 4.5rem 0;
 }
 
 .all_posts__post_container {
@@ -29,34 +43,45 @@
 }
 
 .all_posts__post_title {
-  margin-top: 2rem;
-  margin-bottom: 0.35rem;
-  font-family: "Kollektif Bold", sans-serif;
-  font-size: 1.375rem;
-  color: #B9D368;
+  margin: 4.5rem 0 0.5rem 0;
+  font-size: 1.625rem;
+  color: var(--primary-heading-color);
   text-transform: lowercase;
   text-decoration: none;
 }
 
 .all_posts__post_date {
-  display: block;
-  margin: 0.5rem 0;
-  font-family: dinosaur, sans-serif;
+  margin: 0.5rem 0 1.5rem 0;
+  font-family: brandon-grotesque, sans-serif;
   font-weight: 500;
   font-style: normal;
   font-size: 0.75rem;
-  color: #A0A0A0;
+  color: var(--tertiary-text-color);
   text-transform: uppercase;
+  letter-spacing: 0.05rem;
 }
 
 .all_posts__post_excerpt {
-  font-family: dinosaur, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  color: #FFFFFF;
+  color: var(--primary-text-color);
+}
+
+.all_posts__signoff {
+  margin: 0 -1rem;
+  padding: 1rem;
+  background-color: var(--secondary-background-color);
+}
+
+.signoff__heading {
+  margin: 3rem 0 2rem 0;
+  color: var(--secondary-heading-color);
+}
+
+.signoff__para {
+  margin-bottom: 3rem;
+  color: var(--secondary-text-color);
 }
 
 .all_posts__link {
-  color: #B9D368;
-  text-decoration: none;
+  text-decoration: underline;
+  color: var(--secondary-text-color);
 }

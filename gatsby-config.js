@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `points points points`,
-    description: `this is points points points, a blog about becoming agile (and maybe a few other things)`,
+    title: `Becoming Agile`,
+    description: `Hi there! I'm Greg Rancourt, an engineer, agile coach, and change management expert, and this is a blog I started to help you and your team become agile. I try to focus on the challenges of transitioning to an agile culture for the first time.`,
     author: `Greg Rancourt`,
   },
   plugins: [
@@ -19,11 +19,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `points points points`,
-        short_name: `points points points`,
+        name: `Becoming Agile`,
+        short_name: `Becoming Agile`,
         start_url: `/`,
-        background_color: `#404854`,
-        theme_color: `#404854`,
+        background_color: `#035CA8`,
+        theme_color: `#035CA8`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`,
       },

@@ -1,76 +1,62 @@
 // src/pages/all-posts.js
 
-import React, { useState, useEffect } from "react"
+import React from "react"
 import { graphql, Link } from "gatsby"
 
-import DotGrid from "../components/DotGrid"
 import Footer from "../components/Footer"
 import SEO from "../components/seo"
 
 import styles from "./all-posts.module.css"
 
 export default ({ data }) => {
-  const [numColumns, setNumColumns] = useState(0)
-
-  const handleNumColumns = () => {
-    // 1024 limit based on media query in src/components/layout.css
-    setNumColumns(Math.floor((Math.min(window.innerWidth, 1024) - 24) / 16))
-  }
-
-  useEffect(() => {
-    handleNumColumns()
-
-    // Recalculate when the window size changes
-    window.addEventListener("resize", handleNumColumns)
-
-    // Clean up event listener
-    return function cleanup() {
-      window.removeEventListener("resize", handleNumColumns)
-    }
-  }, [])
-
   return (
     <>
-      <SEO title="all posts" />
+      <SEO title="All Posts" />
+
       <nav className={styles["all_posts__nav"]}>
         <a className={styles["nav__title"]} href="/">
-          points points points
+          Becoming Agile
         </a>
       </nav>
 
-      <DotGrid numRows={7} numColumns={numColumns} scheme="summer" />
-      <h2 className={styles["all_posts__section_heading"]}>every post ever</h2>
-      {data.allMarkdownRemark.edges.map(({ node }) => (
-        <div key={node.id} className={styles["all_posts__post_container"]}>
-          <Link
-            className={styles["all_posts__post_link"]}
-            to={node.fields.slug}
-          >
-            <h3 className={styles["all_posts__post_title"]}>
-              {node.frontmatter.title}
-            </h3>
-            <span className={styles["all_posts__post_date"]}>
+      <section className={styles["all_posts__banner"]}>
+        <h1 className={styles["banner__heading"]}>every post ever</h1>
+      </section>
+
+      <section className={styles["all_posts__listing"]}>
+        {data.allMarkdownRemark.edges.map(({ node }) => (
+          <div key={node.id} className={styles["all_posts__post_container"]}>
+            <Link
+              className={styles["all_posts__post_link"]}
+              to={node.fields.slug}
+            >
+              <h3 className={styles["all_posts__post_title"]}>
+                {node.frontmatter.title}
+              </h3>
+            </Link>
+            <div className={styles["all_posts__post_date"]}>
               {node.frontmatter.date} - {node.timeToRead} min read
-            </span>
+            </div>
             <p className={styles["all_posts__post_excerpt"]}>{node.excerpt}</p>
-          </Link>
-        </div>
-      ))}
+          </div>
+        ))}
+      </section>
 
-      <DotGrid numRows={4} numColumns={numColumns} scheme="summer" />
-      <h2 className={styles["all_posts__section_heading"]}>want even more?</h2>
-      <p>
-        Tweet me{" "}
-        <a
-          className={styles["all_posts__link"]}
-          href="https://twitter.com/intent/tweet?screen_name=codingtojoy"
-        >
-          @codingtojoy
-        </a>{" "}
-        with topics you'd like me to cover here.
-      </p>
+      <section className={styles["all_posts__signoff"]}>
+        <h2 className={styles["signoff__heading"]}>let's keep learning</h2>
+        <p className={styles["signoff__para"]}>
+          Tweet me{" "}
+          <a
+            className={styles["all_posts__link"]}
+            href="https://twitter.com/intent/tweet?screen_name=codingtojoy"
+          >
+            @codingtojoy
+          </a>{" "}
+          with topics you'd like me to cover here.
+        </p>
 
-      <Footer />
+        <Footer />
+      </section>
     </>
   )
 }

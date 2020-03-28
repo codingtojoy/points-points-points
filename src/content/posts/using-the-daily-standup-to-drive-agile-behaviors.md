@@ -1,5 +1,5 @@
 ---
-title: "using the daily standup to drive agile behaviors"
+title: "Using the Daily Standup to Drive Agile Behaviors"
 date: "2020-03-23"
 ---
 
@@ -19,7 +19,7 @@ That said, I believe it's an anti-pattern for agile behavior that focuses too mu
 
 You see, the focus of the standup is about collaborating on a strategy to tackle the sprint goal. It's not meant to be another status meeting where everyone shares what they accomplished (i.e. question number one of the three questions). The three questions paradigm tricks people into the illusion of progress by ensuring that everyone is busy, not that they are making progress _as a team_ towards the sprint goal.
 
-If you have new scrum masters (or agile coaches, in general) as part of the transition, this can lure them into a false sense of security as well. As long as no one on the team currently has any blocks or impediments, then there's nothing for them to do...or so they think. This usually stems from a misunderstanding that the scrum master is only responsible for clearing impediments, as opposed to clearing impediments, creating a high-trust culture, driving execution, and coaching the team on agile principles.
+If you have new scrum masters as part of the transition (or agile coaches, in general), this can lure them into a false sense of security as well. As long as no one on the team currently has any blocks or impediments, then there's nothing for them to do...or so they think. This usually stems from a misunderstanding that the scrum master is only responsible for clearing impediments, as opposed to clearing impediments, creating a high-trust culture, driving execution, and coaching the team on agile principles.
 
 Instead, I try to coach teams to use a variation of the [work items attend](https://martinfowler.com/articles/itsNotJustStandingUp.html#WorkItemsAttend) paradigm. Work items attend is an approach where the team members speak to the highest priority stories in the standup rather than go around the room talking about their individual tasks. The focus moves towards a goal of closing out stories to deliver value to the customer more quickly. This is a dramatic shift in perspective.
 

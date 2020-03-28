@@ -1,19 +1,19 @@
 /* src/components/Button.module.css */
 
 .button {
+  text-align: center;
+}
+
+.button__link {
   display: inline-flex;
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  margin: 0 0 1.5rem 0;
-  height: 32px;
-  min-width: 120px;
-  border-radius: 16px;
-  padding: 8px 16px;
-  font-family: "Kollektif", sans-serif;
-  background-color: #CF4FF5;
-  background: linear-gradient(90deg, #379138 0%, #3DC53F 100%);
-  color: #FFFFFF;
+  font-family: warnock-pro-subhead, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1rem;
+  color: var(--primary-heading-color);
   text-align: center;
   text-decoration: none;
 }

@@ -4,38 +4,91 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 1rem;
 }
 
 .nav__title {
-  font-family: "Kollektif Bold", sans-serif;
-  color: #FFFFFF;
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 0.75rem;
+  color: var(--primary-heading-color);
   text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
 }
 
-.nav__more_articles {
-  font-family: "Kollektif", sans-serif;
-  color: #FFFFFF;
+.nav__more_posts {
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 0.75rem;
+  color: var(--primary-heading-color);
   text-decoration: none;
-  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
 }
 
 .post__title {
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-  font-family: "Kollektif Bold", sans-serif;
-  font-size: 1.75rem;
-  color: #35EBFF;
+  margin: 8rem 0 0.5rem 0;
+  font-family: warnock-pro, serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 2rem;
+  color: var(--primary-heading-color);
   text-transform: lowercase;
   text-decoration: none;
 }
 
 .post__date {
+  margin: 0.5rem 0 3rem 0;
   display: block;
-  margin: 0.5rem 0;
-  font-family: dinosaur, sans-serif;
+  font-family: brandon-grotesque, sans-serif;
   font-weight: 500;
   font-style: normal;
   font-size: 0.75rem;
-  color: #A0A0A0;
+  color: var(--tertiary-text-color);
   text-transform: uppercase;
+  letter-spacing: 0.05rem;
+}
+
+.post__content {
+  margin-bottom: 3rem;
+}
+
+.post__signoff {
+  margin: 0 -1rem;
+  padding: 1rem;
+  background-color: var(--secondary-background-color);
+}
+
+.signoff__heading {
+  margin: 3rem 0 2rem 0;
+  color: var(--secondary-heading-color);
+}
+
+.signoff__para {
+  margin-bottom: 1.5rem;
+  color: var(--secondary-text-color);
+}
+
+.post__social {
+  margin: 0 0 3rem 0;
+  display: inline-grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 1rem;
+}
+
+.social__share {
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: var(--secondary-text-color);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+}
+
+.post__social > a {
+  color: var(--secondary-text-color);
 }

@@ -1,29 +1,66 @@
 /* src/pages/index.module.css */
 
-.home__title {
-  margin: 1.5rem 0 0.5rem 0;
-  font-family: "Kollektif Bold", sans-serif;
-  font-size: 2rem;
-  color: #FFFFFF;
-  text-align: center;
+.home__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  color: var(--primary-heading-color);
 }
 
-.home__aside {
-  margin-bottom: 1.5rem;
-  font-family: dinosaur, sans-serif;
-  font-weight: 400;
+.nav__name {
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 700;
   font-style: normal;
-  font-size: 0.875rem;
-  color: #FFFFFF;
+  font-size: 0.75rem;
+  line-height: 18px;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+}
+
+.nav__social {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 1rem;
+}
+
+.nav__social > a {
+  color: var(--primary-heading-color);
+}
+
+.home__title {
+  margin: 12.5rem 0;
+  color: var(--primary-heading-color);
   text-align: center;
 }
 
-.home__section_heading {
-  margin-top: 4rem;
-  margin-bottom: 1.25rem;
-  font-family: "Kollektif Bold", sans-serif;
-  font-size: 1.75rem;
-  color: #3DC53F;
+.home__about {
+  margin: 0 -1rem;
+  padding: 3rem 1rem;
+  background-color: var(--secondary-background-color);
+}
+
+.about__heading {
+  color: var(--secondary-heading-color);
+  text-align: center;
+}
+
+.about__para {
+  color: var(--secondary-text-color);
+}
+
+.about__para:last-child {
+  margin-bottom: 0;
+}
+
+.home__latest {
+  margin: 4.5rem 0;
+}
+
+.latest__heading {
+  margin-bottom: 8rem;
+  color: var(--primary-heading-color);
+  text-align: center;
 }
 
 .home__post_container {
@@ -35,34 +72,42 @@
 }
 
 .home__post_title {
-  margin-top: 2rem;
-  margin-bottom: 0.35rem;
-  font-family: "Kollektif Bold", sans-serif;
-  font-size: 1.375rem;
-  color: #8FFA15;
+  margin: 0 0 0.5rem 0;
+  padding: 0 1rem;
+  color: var(--primary-heading-color);
   text-transform: lowercase;
-  text-decoration: none;
+  text-align: center;
 }
 
 .home__post_date {
-  display: block;
-  margin: 0.5rem 0;
-  font-family: dinosaur, sans-serif;
+  margin: 0.5rem 0 12rem 0;
+  font-family: brandon-grotesque, sans-serif;
   font-weight: 500;
   font-style: normal;
   font-size: 0.75rem;
-  color: #A0A0A0;
+  color: var(--tertiary-text-color);
   text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.05rem;
 }
 
-.home__post_excerpt {
-  font-family: dinosaur, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  color: #FFFFFF;
+.home__signoff {
+  margin: 0 -1rem;
+  padding: 1rem;
+  background-color: var(--secondary-background-color);
+}
+
+.signoff__heading {
+  margin: 3rem 0 2rem 0;
+  color: var(--secondary-heading-color);
+}
+
+.signoff__para {
+  margin-bottom: 3rem;
+  color: var(--secondary-text-color);
 }
 
 .home__link {
-  color: #8FFA15;
-  text-decoration: none;
+  color: var(--secondary-text-color);
+  text-decoration: underline;
 }

@@ -1,0 +1,31 @@
+/* src/pages/404.module.css */
+
+.error__nav {
+  margin: 0 -1rem;
+  padding: 1rem 1rem 0 1rem;
+  background-color: var(--secondary-background-color);
+}
+
+.nav__title {
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 0.75rem;
+  line-height: 18px;
+  color: var(--secondary-heading-color);
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.05rem;
+}
+
+.error__title {
+  margin: 0 -1rem;
+  padding: 8rem 1rem;
+  text-align: center;
+  background-color: var(--secondary-background-color);
+  color: var(--secondary-heading-color);
+}
+
+.error__body {
+  margin: 3rem 0;
+}
