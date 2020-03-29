@@ -45,7 +45,7 @@ export default ({ data }) => {
 
       <section className={styles["post__signoff"]}>
         <div className={styles["signoff__content"]}>
-          <h2 className={styles["signoff__heading"]}>be a thought leader</h2>
+          <h2 className={styles["signoff__heading"]}>Be a thought leader</h2>
           <p className={styles["signoff__para"]}>
             Spread the knowledge if you found it useful. You have the power to
             equip others for change.

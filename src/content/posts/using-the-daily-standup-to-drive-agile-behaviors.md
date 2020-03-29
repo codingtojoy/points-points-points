@@ -1,5 +1,5 @@
 ---
-title: "Using the Daily Standup to Drive Agile Behaviors"
+title: "Using the daily standup to drive agile behaviors"
 date: "2020-03-23"
 ---
 

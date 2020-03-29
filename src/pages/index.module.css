@@ -108,7 +108,6 @@
   margin: 0 0 0.5rem 0;
   padding: 0 1rem;
   color: var(--primary-heading-color);
-  text-transform: lowercase;
   text-align: center;
 }
 
@@ -194,6 +193,10 @@
   .signoff__content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .signoff__heading {
+    margin: 0;
   }
 }
 

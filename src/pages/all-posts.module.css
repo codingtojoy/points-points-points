@@ -73,7 +73,6 @@
   margin: 4.5rem 0 0.5rem 0;
   font-size: 1.625rem;
   color: var(--primary-heading-color);
-  text-transform: lowercase;
   text-decoration: none;
 }
 
@@ -103,7 +102,7 @@
 }
 
 .signoff__heading {
-  margin: 0 0 0 0;
+  margin: 0 0 2rem 0;
   color: var(--secondary-heading-color);
 }
 
@@ -151,6 +150,10 @@
   .signoff__content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .signoff__heading {
+    margin: 0;
   }
 }
 

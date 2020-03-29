@@ -43,7 +43,7 @@ export default ({ data }) => {
       </nav>
 
       <section className={styles["all_posts__banner"]}>
-        <h1 className={styles["banner__heading"]}>every post ever</h1>
+        <h1 className={styles["banner__heading"]}>Every post ever</h1>
       </section>
 
       <section className={styles["all_posts__listing"]}>
@@ -67,7 +67,7 @@ export default ({ data }) => {
 
       <section className={styles["all_posts__signoff"]}>
         <div className={styles["signoff__content"]}>
-          <h2 className={styles["signoff__heading"]}>let's keep learning</h2>
+          <h2 className={styles["signoff__heading"]}>Let's keep learning</h2>
           <p className={styles["signoff__para"]}>
             Tweet me{" "}
             <a

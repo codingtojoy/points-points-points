@@ -59,7 +59,6 @@
   font-style: normal;
   font-size: 2rem;
   color: var(--primary-heading-color);
-  text-transform: lowercase;
   text-decoration: none;
 }
 

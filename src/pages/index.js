@@ -43,11 +43,11 @@ export default ({ data }) => {
       </nav>
 
       <section className={styles["home__banner"]}>
-        <h1 className={styles["home__title"]}>becoming agile</h1>
+        <h1 className={styles["home__title"]}>Becoming agile</h1>
       </section>
 
       <section className={styles["home__about"]}>
-        <h2 className={styles["about__heading"]}>a little about me</h2>
+        <h2 className={styles["about__heading"]}>A little about me</h2>
         <div>
           <p className={styles["about__para"]}>
             I’ve been an engineer since 2008, working on a variety of aerospace
@@ -67,7 +67,7 @@ export default ({ data }) => {
       </section>
 
       <section className={styles["home__latest"]}>
-        <h2 className={styles["latest__heading"]}>here's the latest</h2>
+        <h2 className={styles["latest__heading"]}>Here's the latest</h2>
         <div className={styles["latest__listing"]}>
           {data.allMarkdownRemark.edges.map(({ node }) => (
             <div key={node.id} className={styles["home__post_container"]}>
@@ -81,13 +81,13 @@ export default ({ data }) => {
               </div>
             </div>
           ))}
-          <Button to="/all-posts" text="show more" />
+          <Button to="/all-posts" text="Show more" />
         </div>
       </section>
 
       <section className={styles["home__signoff"]}>
         <div className={styles["signoff__content"]}>
-          <h2 className={styles["signoff__heading"]}>you can help others</h2>
+          <h2 className={styles["signoff__heading"]}>You can help others</h2>
           <p className={styles["signoff__para"]}>
             The spirit of this blog is to share knowledge for someone else’s
             benefit. If you’re an expert on a topic, consider sharing what
