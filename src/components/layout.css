@@ -694,3 +694,9 @@ ol {
 ol li {
   padding-left: 0.5rem;
 }
+
+@media only screen and (min-width: 875px) {
+  body {
+    padding: 0 2rem;
+  }
+}

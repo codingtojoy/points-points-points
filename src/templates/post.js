@@ -44,19 +44,21 @@ export default ({ data }) => {
       />
 
       <section className={styles["post__signoff"]}>
-        <h2 className={styles["signoff__heading"]}>be a thought leader</h2>
-        <p className={styles["signoff__para"]}>
-          Spread the knowledge if you found it useful. You have the power to
-          equip others for change.
-        </p>
-        <div className={styles["post__social"]}>
-          <p className={styles["social__share"]}>Share:</p>
-          <a
-            href="https://twitter.com/share?ref_src=twsrc%5Etfw"
-            title="Share this page via Twitter"
-          >
-            <i className="fab fa-twitter"></i>
-          </a>
+        <div className={styles["signoff__content"]}>
+          <h2 className={styles["signoff__heading"]}>be a thought leader</h2>
+          <p className={styles["signoff__para"]}>
+            Spread the knowledge if you found it useful. You have the power to
+            equip others for change.
+          </p>
+          <div className={styles["post__social"]}>
+            <p className={styles["social__share"]}>Share:</p>
+            <a
+              href="https://twitter.com/share?ref_src=twsrc%5Etfw"
+              title="Share this page via Twitter"
+            >
+              <i className="fab fa-twitter"></i>
+            </a>
+          </div>
         </div>
         <Footer />
       </section>

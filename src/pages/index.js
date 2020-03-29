@@ -47,54 +47,60 @@ export default ({ data }) => {
 
       <section className={styles["home__about"]}>
         <h2 className={styles["about__heading"]}>a little about me</h2>
-        <p className={styles["about__para"]}>
-          I’ve been an engineer since 2008, working on a variety of aerospace
-          and defense programs in technical and leadership roles on agile teams.
-          I’m currently working as an agile coach and change management expert.
-        </p>
-        <p className={styles["about__para"]}>
-          I am always learning, usually through some sort of creative pursuit.
-          Web development is currently filling my nights and weekends.
-        </p>
-        <p className={styles["about__para"]}>
-          I created this blog to share some of what I’ve learned over the years
-          in the hope that it helps people improve their lives at work.
-        </p>
+        <div>
+          <p className={styles["about__para"]}>
+            I’ve been an engineer since 2008, working on a variety of aerospace
+            and defense programs in technical and leadership roles on agile
+            teams. I’m currently working as an agile coach and change management
+            expert.
+          </p>
+          <p className={styles["about__para"]}>
+            I am always learning, usually through some sort of creative pursuit.
+            Web development is currently filling my nights and weekends.
+          </p>
+          <p className={styles["about__para"]}>
+            I created this blog to share some of what I’ve learned over the
+            years in the hope that it helps people improve their lives at work.
+          </p>
+        </div>
       </section>
 
       <section className={styles["home__latest"]}>
         <h2 className={styles["latest__heading"]}>here's the latest</h2>
-        {data.allMarkdownRemark.edges.map(({ node }) => (
-          <div key={node.id} className={styles["home__post_container"]}>
-            <Link className={styles["home__post_link"]} to={node.fields.slug}>
-              <h3 className={styles["home__post_title"]}>
-                {node.frontmatter.title}
-              </h3>
-            </Link>
-            <div className={styles["home__post_date"]}>
-              {node.frontmatter.date} - {node.timeToRead} min read
+        <div className={styles["latest__listing"]}>
+          {data.allMarkdownRemark.edges.map(({ node }) => (
+            <div key={node.id} className={styles["home__post_container"]}>
+              <Link className={styles["home__post_link"]} to={node.fields.slug}>
+                <h3 className={styles["home__post_title"]}>
+                  {node.frontmatter.title}
+                </h3>
+              </Link>
+              <div className={styles["home__post_date"]}>
+                {node.frontmatter.date} - {node.timeToRead} min read
+              </div>
             </div>
-          </div>
-        ))}
-        <Button to="/all-posts" text="show more" />
+          ))}
+          <Button to="/all-posts" text="show more" />
+        </div>
       </section>
 
       <section className={styles["home__signoff"]}>
-        <h2 className={styles["signoff__heading"]}>you can help others</h2>
-        <p className={styles["signoff__para"]}>
-          The spirit of this blog is to share knowledge for someone else’s
-          benefit. If you’re an expert on a topic, consider sharing what you’ve
-          learned with others. You can even use this blog as a starting point by
-          cloning it from{" "}
-          <a
-            className={styles["home__link"]}
-            href="https://github.com/codingtojoy/becoming-agile"
-          >
-            GitHub
-          </a>
-          .
-        </p>
-
+        <div className={styles["signoff__content"]}>
+          <h2 className={styles["signoff__heading"]}>you can help others</h2>
+          <p className={styles["signoff__para"]}>
+            The spirit of this blog is to share knowledge for someone else’s
+            benefit. If you’re an expert on a topic, consider sharing what
+            you’ve learned with others. You can even use this blog as a starting
+            point by cloning it from{" "}
+            <a
+              className={styles["home__link"]}
+              href="https://github.com/codingtojoy/becoming-agile"
+            >
+              GitHub
+            </a>
+            .
+          </p>
+        </div>
         <Footer />
       </section>
     </>

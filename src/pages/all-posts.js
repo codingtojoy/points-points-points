@@ -43,18 +43,19 @@ export default ({ data }) => {
       </section>
 
       <section className={styles["all_posts__signoff"]}>
-        <h2 className={styles["signoff__heading"]}>let's keep learning</h2>
-        <p className={styles["signoff__para"]}>
-          Tweet me{" "}
-          <a
-            className={styles["all_posts__link"]}
-            href="https://twitter.com/intent/tweet?screen_name=codingtojoy"
-          >
-            @codingtojoy
-          </a>{" "}
-          with topics you'd like me to cover here.
-        </p>
-
+        <div className={styles["signoff__content"]}>
+          <h2 className={styles["signoff__heading"]}>let's keep learning</h2>
+          <p className={styles["signoff__para"]}>
+            Tweet me{" "}
+            <a
+              className={styles["all_posts__link"]}
+              href="https://twitter.com/intent/tweet?screen_name=codingtojoy"
+            >
+              @codingtojoy
+            </a>{" "}
+            with topics you'd like me to cover here.
+          </p>
+        </div>
         <Footer />
       </section>
     </>
