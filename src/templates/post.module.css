@@ -29,8 +29,31 @@
   letter-spacing: 0.05rem;
 }
 
+.more_posts__background {
+  position: absolute;
+  padding: 6rem;
+  z-index: -1;
+  right: 0rem;
+  top: 0rem;
+  background-image: url("../assets/images/more_posts_corner_graphic.svg");
+  background-repeat: no-repeat;
+  background-position: 2.25rem calc(-3.25rem);
+}
+
+.post__background {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  padding: 16rem 12rem;
+  background-image: url("../assets/images/post_graphic_1.svg");
+  background-repeat: no-repeat;
+  background-size: auto 20rem;
+  background-position: top 50% left -6rem;
+}
+
 .post__title {
-  margin: 8rem 0 0.5rem 0;
+  margin: 11.5rem 0 0.5rem 0;
   font-family: warnock-pro, serif;
   font-weight: 600;
   font-style: normal;

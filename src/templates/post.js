@@ -14,10 +14,7 @@ export default ({ data }) => {
 
   return (
     <>
-      <SEO
-        title={post.frontmatter.title}
-        description={post.excerpt}
-      />
+      <SEO title={post.frontmatter.title} description={post.excerpt} />
 
       <Helmet>
         <script
@@ -27,6 +24,7 @@ export default ({ data }) => {
       </Helmet>
 
       <nav className={styles["post__nav"]}>
+        <span className={styles["more_posts__background"]}></span>
         <a className={styles["nav__title"]} href="/">
           Becoming Agile
         </a>
@@ -35,11 +33,15 @@ export default ({ data }) => {
         </a>
       </nav>
 
+      <span className={styles["post__background"]}></span>
       <h1 className={styles["post__title"]}>{post.frontmatter.title}</h1>
       <span className={styles["post__date"]}>
         {post.frontmatter.date} - {post.timeToRead} min read
       </span>
-      <div className={styles["post__content"]} dangerouslySetInnerHTML={{ __html: post.html }} />
+      <div
+        className={styles["post__content"]}
+        dangerouslySetInnerHTML={{ __html: post.html }}
+      />
 
       <section className={styles["post__signoff"]}>
         <h2 className={styles["signoff__heading"]}>be a thought leader</h2>
@@ -49,7 +51,10 @@ export default ({ data }) => {
         </p>
         <div className={styles["post__social"]}>
           <p className={styles["social__share"]}>Share:</p>
-          <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" title="Share this page via Twitter">
+          <a
+            href="https://twitter.com/share?ref_src=twsrc%5Etfw"
+            title="Share this page via Twitter"
+          >
             <i className="fab fa-twitter"></i>
           </a>
         </div>

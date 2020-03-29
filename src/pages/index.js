@@ -25,24 +25,32 @@ export default ({ data }) => {
       <nav className={styles["home__nav"]}>
         <span className={styles["nav__name"]}>Greg Rancourt</span>
         <div className={styles["nav__social"]}>
-          <a href="https://twitter.com/codingtojoy" title="@codingtojoy Twitter profile">
+          <span className={styles["social__background"]}></span>
+          <a
+            href="https://twitter.com/codingtojoy"
+            title="@codingtojoy Twitter profile"
+          >
             <i className="fab fa-twitter"></i>
           </a>
-          <a href="https://github.com/codingtojoy" title="@codingtojoy GitHub profile">
+          <a
+            href="https://github.com/codingtojoy"
+            title="@codingtojoy GitHub profile"
+          >
             <i className="fab fa-github"></i>
           </a>
         </div>
       </nav>
 
-      <h1 className={styles["home__title"]}>becoming agile</h1>
+      <section className={styles["home__banner"]}>
+        <h1 className={styles["home__title"]}>becoming agile</h1>
+      </section>
 
       <section className={styles["home__about"]}>
         <h2 className={styles["about__heading"]}>a little about me</h2>
         <p className={styles["about__para"]}>
-          I’ve been an engineer since 2008, working on a variety
-          of aerospace and defense programs in technical and leadership roles on
-          agile teams. I’m currently working as an agile coach and change
-          management expert.
+          I’ve been an engineer since 2008, working on a variety of aerospace
+          and defense programs in technical and leadership roles on agile teams.
+          I’m currently working as an agile coach and change management expert.
         </p>
         <p className={styles["about__para"]}>
           I am always learning, usually through some sort of creative pursuit.

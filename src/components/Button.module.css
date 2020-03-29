@@ -1,7 +1,11 @@
 /* src/components/Button.module.css */
 
 .button {
+  padding: 2rem 0;
   text-align: center;
+  background-image: url("../assets/images/button_graphic.svg");
+  background-repeat: no-repeat;
+  background-position: calc(50%) 50%;
 }
 
 .button__link {
