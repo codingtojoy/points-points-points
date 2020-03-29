@@ -700,3 +700,11 @@ ol li {
     padding: 0 2rem;
   }
 }
+
+@media only screen and (min-width: 1264px) {
+  body {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1200px;
+  }
+}

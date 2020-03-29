@@ -1,6 +1,7 @@
 // src/pages/all-posts.js
 
 import React from "react"
+import Helmet from "react-helmet"
 import { graphql, Link } from "gatsby"
 
 import Footer from "../components/Footer"
@@ -13,10 +14,32 @@ export default ({ data }) => {
     <>
       <SEO title="All Posts" />
 
+      <Helmet>
+        <script
+          src="https://kit.fontawesome.com/4d196fc311.js"
+          crossorigin="anonymous"
+        ></script>
+      </Helmet>
+
       <nav className={styles["all_posts__nav"]}>
         <a className={styles["nav__title"]} href="/">
           Becoming Agile
         </a>
+        <div className={styles["nav__social"]}>
+          <p className={styles["social__follow"]}>Follow:</p>
+          <a
+            href="https://twitter.com/codingtojoy"
+            title="@codingtojoy Twitter profile"
+          >
+            <i className="fab fa-twitter"></i>
+          </a>
+          <a
+            href="https://github.com/codingtojoy"
+            title="@codingtojoy GitHub profile"
+          >
+            <i className="fab fa-github"></i>
+          </a>
+        </div>
       </nav>
 
       <section className={styles["all_posts__banner"]}>

@@ -26,6 +26,7 @@ export default ({ data }) => {
         <span className={styles["nav__name"]}>Greg Rancourt</span>
         <div className={styles["nav__social"]}>
           <span className={styles["social__background"]}></span>
+          <p className={styles["social__follow"]}>Follow:</p>
           <a
             href="https://twitter.com/codingtojoy"
             title="@codingtojoy Twitter profile"

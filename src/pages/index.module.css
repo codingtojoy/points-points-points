@@ -20,7 +20,7 @@
 
 .nav__social {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, auto);
   grid-column-gap: 1rem;
 }
 
@@ -33,6 +33,17 @@
   background-image: url("../assets/images/social_corner_graphic.svg");
   background-repeat: no-repeat;
   background-position: 0.25rem -5.5rem;
+}
+
+.social__follow {
+  margin-bottom: 0;
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: var(--primary-heading-color);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
 }
 
 .nav__social > a {
@@ -183,5 +194,24 @@
   .signoff__content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (min-width: 1264px) {
+  .social__background {
+    display: none;
+  }
+
+  .home__about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 calc(-1 * (100vw - 1200px) / 2);
+    padding: 3rem calc((100vw - 1200px) / 2);
+    width: 100vw;
+  }
+
+  .home__signoff {
+    margin: 3rem calc(-1 * (100vw - 1200px) / 2) 0 calc(-1 * (100vw - 1200px) / 2);
+    padding: 4rem calc((100vw - 1200px) / 2) 2rem calc((100vw - 1200px) / 2);
   }
 }
